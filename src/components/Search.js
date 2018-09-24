@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Search = () => (
-  <search>
+const Search = props => (
+  <search onSubmit={props.getComic} >
     <input type="text" />
     <button>Search</button>
   </search>
